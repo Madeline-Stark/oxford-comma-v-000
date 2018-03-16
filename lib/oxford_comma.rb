@@ -1,14 +1,15 @@
 def oxford_comma(array)
   last_array = array.pop
+  string = array
   if string.size > 3
-    string = array.join(", ")
+    string = string.join(", ")
   else
-    string = array.join(" ")
+    string = string.join(" ")
   end
   if string.size > 3
     string << ", and "
   elsif string.size > 2
-    string<< " and "
+    string << " and "
   end
   string << last_array
   string
