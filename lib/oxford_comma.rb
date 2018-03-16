@@ -7,7 +7,7 @@ def oxford_comma(array)
   end
   if string.size > 3
     string << ", and "
-  elsif string.size > 1
+  elsif string.size > 2
     string<< " and "
   end
   string << last_array
