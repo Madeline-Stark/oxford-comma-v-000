@@ -3,6 +3,8 @@ def oxford_comma(array)
   string = array.join(", ")
   if string.size > 2
     string << ", and "
+  elsif string.size > 1
+    string<< " and "
   end
   string << last_array
   string
